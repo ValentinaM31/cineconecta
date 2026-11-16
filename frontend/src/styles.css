@@ -1,0 +1,82 @@
+:root {
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: #f5f1e9;
+  background: #171b1e;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor {
+  width: min(68rem, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.cabecera {
+  border-bottom: 1px solid #363c3e;
+}
+
+.marca {
+  padding-block: 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.catalogo {
+  padding-block: clamp(2.25rem, 7vw, 5rem);
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ficha {
+  display: grid;
+  align-content: space-between;
+  gap: 2rem;
+  padding: 1.35rem;
+  border: 1px solid #394343;
+  border-radius: 0.75rem;
+  background: #222a2c;
+}
+
+.tipo {
+  margin: 0;
+  color: #d7bc8d;
+  font-size: 0.875rem;
+}
+
+.ficha h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  overflow-wrap: anywhere;
+}
+
+.mensaje {
+  max-width: 38rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #475356;
+  border-radius: 0.75rem;
+  line-height: 1.5;
+}
+
+.error {
+  color: #ffcfbb;
+  border-color: #a56855;
+}
